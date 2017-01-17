@@ -4,11 +4,23 @@
 		<style>
 			body {
 				margin: 0px;
-				padding: 0px;
+				padding: 50px;
 			}
 		</style>
 	</head>
 	<body>
-		<canvas id="myCanvas" width="200" height="100"></canvas>
+		<canvas id="myCanvas" width="900" height="600"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var context = canvas.getContext('2d');
+            
+            context.beginPath();
+            context.rect(150, 50, 50, 100);
+            context.fillStyle = 'yellow';
+            context.fill();
+            context.lineWidth = '7.5';
+            context.strokeStyle = 'black';
+            context.stroke();
+        </script>
 	</body>
 </html>
